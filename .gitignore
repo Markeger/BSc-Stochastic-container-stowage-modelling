@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+
+# MATLAB
+*.asv
+*.slx.autosave
+
+# Data files (uncomment if you don't want to track large data files)
+# *.csv
+# *.xlsx
+# *.json
+# data/
+
+# Results and outputs
+results/temp/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
