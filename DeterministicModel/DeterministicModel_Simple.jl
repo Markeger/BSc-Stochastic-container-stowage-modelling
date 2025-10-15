@@ -5,6 +5,9 @@ T_40 = count(x -> x.length == 40, data.container_types)
 L = data.n_locations          # Number of locations/blocks
 P = data.n_ports              # Number of ports to visit
 
+LD = data.containers          # The number of container in each leg per container type
+transport_keys = collect(keys(LD))
+
 TR = length(data.containers)  # Number of transports (sets of loading and discharge ports) #((P-1)*P/2)
 TR_ON = Dict{Int, Vector{Int}}()    # Set of transports on the vessel at departure from port p
 for p in 1:P
@@ -22,9 +25,6 @@ TR_DIS = Dict{Int, Vector{Int}}()   # Set of transporters that discharges at por
 for p in 1:P
     TR_DIS[p] = [t_idx for (t_idx, (load, discharge)) in enumerate(keys(LD)) if discharge == p]
 end
-
-LD = data.containers          # The number of container in each leg per container type
-transport_keys = collect(keys(LD))
 
 C_20 = data.location_TEU_capacity   # TEU capacity of each location
 C_40 = data.location_FEU_capacity   # FEU capacity of each location
