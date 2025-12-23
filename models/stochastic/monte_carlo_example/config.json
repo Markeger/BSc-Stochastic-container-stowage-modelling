@@ -1,0 +1,29 @@
+{
+  "simulation": {
+    "iterations": 1000,
+    "seed": 42,
+    "output_frequency": 100
+  },
+  "uncertainty": {
+    "weight_variation": 0.1,
+    "time_variation": 0.15,
+    "weather_factor_range": [0.8, 1.2]
+  },
+  "optimization": {
+    "solver": "ECOS",
+    "time_limit": 60,
+    "gap_tolerance": 0.01
+  },
+  "problem": {
+    "n_containers": 100,
+    "n_slots": 120,
+    "weight_capacity": 30000,
+    "min_container_weight": 5000,
+    "max_container_weight": 25000
+  },
+  "output": {
+    "save_solutions": true,
+    "save_statistics": true,
+    "generate_plots": true
+  }
+}
