@@ -1,0 +1,76 @@
+Set parameter Threads to value 1
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 1
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "AlmaLinux 9.7 (Moss Jungle Cat)")
+
+CPU model: Intel(R) Xeon(R) Gold 6126 CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 24 physical cores, 24 logical processors, using up to 1 threads
+
+Non-default parameters:
+MIPGap  0.05
+TSPort  4195
+Threads  1
+
+Optimize a model with 68556 rows, 679564 columns and 7594400 nonzeros (Min)
+Model fingerprint: 0xdaea5a5c
+Model has 14716 linear objective coefficients
+Variable types: 670924 continuous, 8640 integer (8640 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [9e-02, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e-01, 3e+02]
+Found heuristic solution: objective 13104.300600
+Presolve removed 44844 rows and 260855 columns (presolve time = 5s)...
+Presolve removed 55060 rows and 444712 columns (presolve time = 10s)...
+Presolve removed 66702 rows and 649600 columns
+Presolve time: 13.34s
+Presolved: 1854 rows, 29964 columns, 144828 nonzeros
+Found heuristic solution: objective 5704.2378667
+Variable types: 29736 continuous, 228 integer (228 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    4.7416149e+03   1.829036e+03   0.000000e+00     14s
+    1962    4.9654051e+03   0.000000e+00   0.000000e+00     14s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+       0 DPushes remaining with DInf 0.0000000e+00                14s
+
+     410 PPushes remaining with PInf 0.0000000e+00                14s
+       0 PPushes remaining with PInf 0.0000000e+00                14s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 9.0205621e-16     14s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    2615    4.9654051e+03   0.000000e+00   0.000000e+00     14s
+Crossover time: 0.01 seconds (0.00 work units)
+    2615    4.9654051e+03   0.000000e+00   0.000000e+00     14s
+
+Root relaxation: objective 4.965405e+03, 2615 iterations, 0.22 seconds (0.18 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4965.40507    0    5 5704.23787 4965.40507  13.0%     -   14s
+H    0     0                    5047.8886222 4965.40507  1.63%     -   14s
+
+Explored 1 nodes (2615 simplex iterations) in 14.19 seconds (11.29 work units)
+Thread count was 1 (of 24 available processors)
+
+Solution count 3: 5047.89 5704.24 13104.3 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 5.047888622222e+03, best bound 4.965405066667e+03, gap 1.6340%
+
+User-callback calls 1521, time in user-callback 0.00 sec
