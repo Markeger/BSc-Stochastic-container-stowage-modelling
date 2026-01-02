@@ -1,0 +1,54 @@
+Set parameter Threads to value 1
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 1
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "AlmaLinux 9.7 (Moss Jungle Cat)")
+
+CPU model: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 32 logical processors, using up to 1 threads
+
+Non-default parameters:
+MIPGap  0.05
+TSPort  4195
+Threads  1
+
+Optimize a model with 12450 rows, 323700 columns and 4693125 nonzeros (Min)
+Model fingerprint: 0x3a796b14
+Model has 4560 linear objective coefficients
+Variable types: 322080 continuous, 1620 integer (1620 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 3e+02]
+Found heuristic solution: objective 17396.000000
+Presolve removed 7724 rows and 143565 columns (presolve time = 5s)...
+Presolve removed 9373 rows and 251643 columns
+Presolve time: 7.82s
+Presolved: 3077 rows, 72057 columns, 625931 nonzeros
+Variable types: 72057 continuous, 0 integer (0 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.248251e+03   0.000000e+00      8s
+    6607    4.2660000e+03   0.000000e+00   0.000000e+00     10s
+
+Root relaxation: objective 4.266000e+03, 6607 iterations, 1.74 seconds (1.55 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    4266.0000000 4266.00000  0.00%     -    9s
+
+Explored 1 nodes (6607 simplex iterations) in 9.96 seconds (8.16 work units)
+Thread count was 1 (of 32 available processors)
+
+Solution count 1: 4266 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 4.266000000000e+03, best bound 4.266000000000e+03, gap 0.0000%
+
+User-callback calls 608, time in user-callback 0.00 sec

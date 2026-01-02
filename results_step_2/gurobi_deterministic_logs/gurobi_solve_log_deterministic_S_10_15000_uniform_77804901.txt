@@ -1,0 +1,47 @@
+Set parameter Threads to value 1
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 1
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "AlmaLinux 9.7 (Moss Jungle Cat)")
+
+CPU model: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 32 physical cores, 32 logical processors, using up to 1 threads
+
+Non-default parameters:
+MIPGap  0.05
+TSPort  4195
+Threads  1
+
+Optimize a model with 6900 rows, 139500 columns and 1446750 nonzeros (Min)
+Model fingerprint: 0xd4512fff
+Model has 2340 linear objective coefficients
+Variable types: 138420 continuous, 1080 integer (1080 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [1e+00, 1e+01]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 3e+02]
+Found heuristic solution: objective 16296.000000
+Presolve removed 4990 rows and 96012 columns
+Presolve time: 2.50s
+Presolved: 1910 rows, 43488 columns, 280705 nonzeros
+Variable types: 43488 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 4.157000e+03, 3959 iterations, 0.65 seconds (0.62 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    4157.0000000 4157.00000  0.00%     -    3s
+
+Explored 1 nodes (3959 simplex iterations) in 3.29 seconds (2.74 work units)
+Thread count was 1 (of 32 available processors)
+
+Solution count 1: 4157 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 4.157000000000e+03, best bound 4.157000000000e+03, gap 0.0000%
+
+User-callback calls 301, time in user-callback 0.00 sec
