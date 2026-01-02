@@ -1,0 +1,92 @@
+Set parameter Threads to value 1
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 1
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "AlmaLinux 9.7 (Moss Jungle Cat)")
+
+CPU model: Intel(R) Xeon(R) Gold 6126 CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 24 physical cores, 24 logical processors, using up to 1 threads
+
+Non-default parameters:
+MIPGap  0.05
+TSPort  4195
+Threads  1
+
+Optimize a model with 64464 rows, 1147788 columns and 14549904 nonzeros (Min)
+Model fingerprint: 0x19cb1d2f
+Model has 21132 linear objective coefficients
+Variable types: 1136988 continuous, 10800 integer (10800 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [8e-02, 1e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 3e+02]
+Found heuristic solution: objective 17475.421950
+Presolve removed 15776 rows and 368348 columns (presolve time = 5s)...
+Presolve removed 27575 rows and 368558 columns (presolve time = 10s)...
+Presolve removed 36436 rows and 370850 columns (presolve time = 16s)...
+Presolve removed 36436 rows and 370850 columns (presolve time = 20s)...
+Presolve removed 39491 rows and 541917 columns (presolve time = 25s)...
+Presolve removed 39491 rows and 541917 columns (presolve time = 30s)...
+Presolve removed 39357 rows and 541783 columns
+Presolve time: 30.48s
+Presolved: 25107 rows, 606005 columns, 4715564 nonzeros
+Variable types: 604181 continuous, 1824 integer (1824 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.158714e+04   0.000000e+00     37s
+   19833    3.6453302e+03   1.911913e+04   0.000000e+00     40s
+   25825    4.0215505e+03   2.431624e+05   0.000000e+00     46s
+   28984    4.1776355e+03   7.792090e+04   0.000000e+00     50s
+   33358    4.4706614e+03   1.608574e+05   0.000000e+00     55s
+   36193    4.4894525e+03   9.739234e+04   0.000000e+00     60s
+   40362    4.5796317e+03   2.035993e+05   0.000000e+00     65s
+   43521    4.5984182e+03   3.668563e+04   0.000000e+00     70s
+   46996    4.6374760e+03   1.440199e+06   0.000000e+00     75s
+   48776    4.6374761e+03   3.923883e+03   0.000000e+00     81s
+   50637    4.6378003e+03   3.929038e+03   0.000000e+00     85s
+   52245    4.6443003e+03   7.346766e+03   0.000000e+00     90s
+   53783    4.6443004e+03   7.020121e+03   0.000000e+00     96s
+   55076    4.6443004e+03   5.222595e+01   0.000000e+00    101s
+   55251    4.6442922e+03   0.000000e+00   0.000000e+00    101s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+    5098 DPushes remaining with DInf 0.0000000e+00               102s
+       0 DPushes remaining with DInf 0.0000000e+00               102s
+
+    5827 PPushes remaining with PInf 0.0000000e+00               102s
+       0 PPushes remaining with PInf 0.0000000e+00               102s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 5.2867433e-13    102s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   64815    4.6442922e+03   0.000000e+00   0.000000e+00    102s
+Crossover time: 0.30 seconds (0.13 work units)
+   64815    4.6442922e+03   0.000000e+00   0.000000e+00    102s
+
+Root relaxation: objective 4.644292e+03, 64815 iterations, 69.57 seconds (46.65 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    4644.2921875 4644.29219  0.00%     -  234s
+
+Explored 1 nodes (100681 simplex iterations) in 234.75 seconds (167.66 work units)
+Thread count was 1 (of 24 available processors)
+
+Solution count 2: 4644.29 17475.4 
+
+Optimal solution found (tolerance 5.00e-02)
+Best objective 4.644292187500e+03, best bound 4.644292187500e+03, gap 0.0000%
+
+User-callback calls 3104, time in user-callback 0.01 sec

@@ -1,0 +1,178 @@
+Set parameter Threads to value 1
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter ConcurrentMIP to value 1
+Set parameter MIPGap to value 0.05
+Set parameter Threads to value 1
+Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (linux64 - "AlmaLinux 9.7 (Moss Jungle Cat)")
+
+CPU model: Intel(R) Xeon(R) CPU E5-2650 v4 @ 2.20GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 24 physical cores, 24 logical processors, using up to 1 threads
+
+Non-default parameters:
+MIPGap  0.05
+TSPort  4195
+Threads  1
+
+Optimize a model with 128424 rows, 2268108 columns and 29188764 nonzeros (Min)
+Model fingerprint: 0x384fc82e
+Model has 42012 linear objective coefficients
+Variable types: 2246508 continuous, 21600 integer (21600 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [1e-02, 3e+00]
+  Bounds range     [0e+00, 0e+00]
+  RHS range        [1e+00, 7e+02]
+Found heuristic solution: objective 15952.520629
+Presolve removed 15030 rows and 20400 columns (presolve time = 7s)...
+Presolve removed 31467 rows and 750796 columns (presolve time = 10s)...
+Presolve removed 31467 rows and 751225 columns (presolve time = 15s)...
+Presolve removed 54938 rows and 751645 columns (presolve time = 21s)...
+Presolve removed 54938 rows and 751645 columns (presolve time = 25s)...
+Presolve removed 59538 rows and 751645 columns (presolve time = 30s)...
+Presolve removed 72164 rows and 755812 columns (presolve time = 35s)...
+Presolve removed 72164 rows and 755812 columns (presolve time = 41s)...
+Presolve removed 72164 rows and 755812 columns (presolve time = 45s)...
+Presolve removed 72164 rows and 755812 columns (presolve time = 50s)...
+Presolve removed 78325 rows and 1122436 columns (presolve time = 55s)...
+Presolve removed 78525 rows and 1122636 columns (presolve time = 60s)...
+Presolve removed 78525 rows and 1122636 columns (presolve time = 65s)...
+Presolve removed 78222 rows and 1122333 columns
+Presolve time: 68.81s
+Presolved: 50202 rows, 1145775 columns, 9084094 nonzeros
+Found heuristic solution: objective 15952.388171
+Variable types: 1141671 continuous, 4104 integer (4104 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    5.1100571e+00   3.614895e+04   0.000000e+00     84s
+   12307    2.9449545e+03   2.494068e+04   0.000000e+00     85s
+   30101    3.4662505e+03   2.617305e+04   0.000000e+00     90s
+   45470    3.6752008e+03   2.063810e+04   0.000000e+00     95s
+   56965    3.8264394e+03   1.085179e+05   0.000000e+00    100s
+   58055    3.8421056e+03   2.944414e+05   0.000000e+00    106s
+   58927    3.8697385e+03   3.594769e+05   0.000000e+00    111s
+   60126    3.8960115e+03   2.147933e+05   0.000000e+00    115s
+   60998    3.8960774e+03   1.569126e+05   0.000000e+00    121s
+   61543    3.8960774e+03   1.822828e+05   0.000000e+00    125s
+   62306    3.8960774e+03   8.176377e+05   0.000000e+00    131s
+   63287    3.9002045e+03   5.071605e+05   0.000000e+00    135s
+   64159    3.9002045e+03   3.399137e+05   0.000000e+00    140s
+   64922    3.9021122e+03   3.151227e+05   0.000000e+00    145s
+   65576    3.9143883e+03   8.294113e+04   0.000000e+00    150s
+   66339    3.9143883e+03   3.103514e+05   0.000000e+00    155s
+   67647    3.9143888e+03   5.316699e+05   0.000000e+00    160s
+   69500    3.9969126e+03   3.839063e+06   0.000000e+00    165s
+   70808    4.0084020e+03   2.973459e+06   0.000000e+00    170s
+   72770    4.0432310e+03   5.183567e+04   0.000000e+00    175s
+   74296    4.0656443e+03   2.329946e+05   0.000000e+00    180s
+   75604    4.0656445e+03   1.950498e+05   0.000000e+00    185s
+   77457    4.0700243e+03   5.607834e+05   0.000000e+00    190s
+   79637    4.1104510e+03   6.242648e+04   0.000000e+00    195s
+   81054    4.1104512e+03   1.001255e+05   0.000000e+00    200s
+   82362    4.1104513e+03   2.685046e+05   0.000000e+00    205s
+   83561    4.1104514e+03   1.248907e+06   0.000000e+00    210s
+   84760    4.1117940e+03   3.130044e+05   0.000000e+00    215s
+   86286    4.1129796e+03   4.274959e+05   0.000000e+00    220s
+   88139    4.1144070e+03   1.852418e+05   0.000000e+00    225s
+   90360    4.1632469e+03   2.867271e+05   0.000000e+00    230s
+   91341    4.1632470e+03   7.651124e+04   0.000000e+00    235s
+   91995    4.1632470e+03   5.004084e+05   0.000000e+00    241s
+   92601    4.1632471e+03   1.623664e+05   0.000000e+00    246s
+   93146    4.1632471e+03   9.936217e+04   0.000000e+00    250s
+   94018    4.1632471e+03   3.541184e+05   0.000000e+00    255s
+   94606    4.1632471e+03   2.181217e+05   0.000000e+00    262s
+   94933    4.1632472e+03   1.277061e+05   0.000000e+00    265s
+   96132    4.1632472e+03   1.540342e+05   0.000000e+00    271s
+   97520    4.1701862e+03   4.195742e+05   0.000000e+00    276s
+   97919    4.1701862e+03   5.719358e+04   0.000000e+00    281s
+   98464    4.1701862e+03   9.633961e+05   0.000000e+00    285s
+   98962    4.1701863e+03   3.037804e+05   0.000000e+00    291s
+   99498    4.1701863e+03   9.393636e+05   0.000000e+00    295s
+  100152    4.1701863e+03   4.416645e+04   0.000000e+00    300s
+  100915    4.1701864e+03   6.799883e+04   0.000000e+00    305s
+  101631    4.1701864e+03   1.890410e+05   0.000000e+00    312s
+  101939    4.1701864e+03   4.184084e+05   0.000000e+00    315s
+  102574    4.1701864e+03   5.324719e+04   0.000000e+00    321s
+  102963    4.1701864e+03   1.289218e+05   0.000000e+00    326s
+  103343    4.1701865e+03   7.259461e+04   0.000000e+00    331s
+  103743    4.1701865e+03   1.461727e+05   0.000000e+00    336s
+  104151    4.1701865e+03   9.314910e+04   0.000000e+00    340s
+  104796    4.1701865e+03   2.755946e+05   0.000000e+00    345s
+  105205    4.1701865e+03   2.863694e+05   0.000000e+00    350s
+  105732    4.1701865e+03   3.018203e+04   0.000000e+00    355s
+  106268    4.1701865e+03   1.281038e+04   0.000000e+00    361s
+  106813    4.1704884e+03   1.843485e+04   0.000000e+00    366s
+  107490    4.1726889e+03   3.073655e+04   0.000000e+00    371s
+  107760    4.1726889e+03   3.943407e+05   0.000000e+00    375s
+  108367    4.1726889e+03   5.843939e+04   0.000000e+00    382s
+  108803    4.1726890e+03   1.197839e+04   0.000000e+00    385s
+  109252    4.1726890e+03   3.659198e+05   0.000000e+00    391s
+  109797    4.1730917e+03   1.173539e+04   0.000000e+00    395s
+  110395    4.1730917e+03   1.348005e+05   0.000000e+00    402s
+  110713    4.1730917e+03   4.728244e+04   0.000000e+00    405s
+  111202    4.1730917e+03   1.390964e+04   0.000000e+00    411s
+  111582    4.1730917e+03   1.319663e+05   0.000000e+00    416s
+  112071    4.1730917e+03   4.290563e+05   0.000000e+00    421s
+  112479    4.1730917e+03   3.287594e+04   0.000000e+00    426s
+  112929    4.1730917e+03   3.388878e+04   0.000000e+00    432s
+  113308    4.1730917e+03   2.042676e+04   0.000000e+00    437s
+  113744    4.1730918e+03   2.768512e+04   0.000000e+00    441s
+  114271    4.1730918e+03   1.169155e+05   0.000000e+00    446s
+  114807    4.1730918e+03   6.150928e+04   0.000000e+00    451s
+  115286    4.1730918e+03   2.059229e+04   0.000000e+00    456s
+  115703    4.1730918e+03   3.253014e+03   0.000000e+00    460s
+  116282    4.1730918e+03   3.003739e+04   0.000000e+00    467s
+  116609    4.1730918e+03   4.411578e+03   0.000000e+00    470s
+  117098    4.1730918e+03   6.294399e+03   0.000000e+00    476s
+  117634    4.1730918e+03   2.818096e+03   0.000000e+00    481s
+  118023    4.1730918e+03   1.034036e+04   0.000000e+00    485s
+  118593    4.1730918e+03   1.365888e+04   0.000000e+00    492s
+  118983    4.1730918e+03   2.602616e+03   0.000000e+00    497s
+  119282    4.1730918e+03   3.404348e+03   0.000000e+00    501s
+  119809    4.1730918e+03   8.820239e+03   0.000000e+00    506s
+  120208    4.1730918e+03   4.499229e+02   0.000000e+00    511s
+  120588    4.1730918e+03   4.720927e+02   0.000000e+00    516s
+  120988    4.1730918e+03   3.400866e+01   0.000000e+00    520s
+  121247    4.1730814e+03   0.000000e+00   0.000000e+00    523s
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root crossover log...
+
+    9002 DPushes remaining with DInf 0.0000000e+00               524s
+       0 DPushes remaining with DInf 0.0000000e+00               524s
+
+   12439 PPushes remaining with PInf 0.0000000e+00               524s
+       0 PPushes remaining with PInf 0.0000000e+00               524s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 7.0988354e-13    524s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+  140057    4.1730814e+03   0.000000e+00   0.000000e+00    524s
+Crossover time: 0.95 seconds (0.27 work units)
+  140057    4.1730814e+03   0.000000e+00   0.000000e+00    525s
+
+Root relaxation: objective 4.173081e+03, 140057 iterations, 451.08 seconds (243.99 work units)
+Total elapsed time = 525.74s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4173.08144    0    4 15952.3882 4173.08144  73.8%     - 2339s
+H    0     0                    4191.1192820 4173.08144  0.43%     - 2339s
+
+Explored 1 nodes (319484 simplex iterations) in 2340.54 seconds (1401.41 work units)
+Thread count was 1 (of 24 available processors)
+
+Solution count 3: 4191.12 15952.4 15952.5 
+
+Optimal solution found (tolerance 5.00e-02)
+Warning: max bound violation (1.1410e-06) exceeds tolerance
+Best objective 4.191119282041e+03, best bound 4.173081435714e+03, gap 0.4304%
+
+User-callback calls 6303, time in user-callback 0.02 sec
